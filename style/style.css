@@ -8,6 +8,8 @@ body {
     font-size: 15px;
 }
 .header {
+    top: 0;
+    position: sticky;
     display: flex;
     font-size: 40px;
     justify-content: center;
@@ -42,10 +44,27 @@ span.earth,
 .container .instructions p {
     text-align: center;
 }
+
+.game {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border-width: 4px;
+    border-radius: 5px;
+    border-style: double;
+    border-color: black;
+    padding: 15px 20px;
+    margin:5px 10px;
+}
+.status {
+    display: flex;
+    flex-direction:row;
+    gap : 30px;
+}
 .status img,
 .game img {
     width: 70px;
-    height: auto;
+    height: 70px;
 }
 .game img.earth,
 .game img.water,
@@ -59,8 +78,21 @@ span.earth,
     filter: grayscale(0%);
 }
 
+.status .yourPick,
+.status .opponentPick {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
     text-align:center;
-    background-color: black;
     color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
