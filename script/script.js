@@ -36,24 +36,24 @@ function opponent() {
 function comparePick(opponent, user) {
     switch(opponent) {
         case 'fire':
-            opponentPick.src = "/images/fire.png";
+            opponentPick.src = "./images/fire.png";
             break;
         case 'water':
-            opponentPick.src = "/images/water.png";
+            opponentPick.src = "./images/water.png";
             break;
         case 'earth':
-            opponentPick.src = "/images/earth.png";
+            opponentPick.src = "./images/earth.png";
             break;            
     }
     switch(user) {
         case 'fire':
-            yourPick.src = "/images/fire.png";
+            yourPick.src = "./images/fire.png";
             break;
         case 'water':
-            yourPick.src = "/images/water.png";
+            yourPick.src = "./images/water.png";
             break;
         case 'earth':
-            yourPick.src = "/images/earth.png";
+            yourPick.src = "./images/earth.png";
             break;            
     }
 }
