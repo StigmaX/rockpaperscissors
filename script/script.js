@@ -123,7 +123,7 @@ function retry() {
     opponentScore = 0;
     btnAgain.style.display = 'none';
     result.textContent = '';
-    yourPick.src = "/images/question-mark.png";
-    opponentPick.src = "/images/question-mark.png";
+    yourPick.src = "./images/question-mark.png";
+    opponentPick.src = "./images/question-mark.png";
     console.log(gameCount);
 }
